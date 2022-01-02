@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HTML tags</title>
+    <style>
+      mark {
+        background: linear-gradient(transparent 80%, #61c877 0%);
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <!-- legend -->
+        <legend>Title</legend>
+        <!-- legend -->
+
+        <!-- datalist -->
+        <label for="myBrowser">一覧からブラウザを選択してください。</label>
+        <input list="browsers" id="myBrowser" />
+        <datalist id="browsers">
+          <option value="Chrome"></option>
+          <option value="Firefox"></option>
+          <option value="Internet Explorer"></option>
+          <option value="Safari"></option>
+          <option value="Microsoft Edge"></option>
+        </datalist>
+        <!-- datalist -->
+
+        <br />
+        <!-- progress -->
+        <progress id="pb" value="0.8" max="1"></progress>
+        <!-- progress -->
+
+        <!-- input color -->
+        <input type="color" />
+        <!-- input color -->
+
+        <!-- abbr -->
+        <p>
+          あなたは
+          <abbr title="HyperText Markup Language">HTML</abbr>
+          をご存じでしょうか。
+        </p>
+        <!-- abbr -->
+
+        <!-- del and ins -->
+        <del>明日合いましょう</del><ins>明後日合いましょう</ins>
+        <!-- del and ins -->
+
+        <br />
+        <mark>mark要素はテキストを目立たせる時に使います</mark>
+
+        <marquee behavior="scroll" scrollamount="6"
+          >テキストがスクロールします</marquee
+        >
+        <marquee behavior="slide">テキストが端で停止します。</marquee>
+        <!-- <marquee direction="up">テキストが下から上にスクロールします。</marquee> -->
+
+        <!-- superscript, subscipt -->
+        <p>H<sub>2</sub>0</p>
+        <p>X<sup>2</sup></p>
+
+        <!-- template -->
+      </fieldset>
+    </form>
+    <script>
+      pb = document.getElementById("pb");
+      pb.value = "0.6";
+    </script>
+  </body>
+</html>
